@@ -5,42 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
 </head>
+
+<style>
+
+    #heading{
+        color: lightseagreen;
+        font-size: larger;"
+    }
+
+    .operators{
+        background-color: rgb(117, 122, 128);
+    }
+
+    #table{
+        border: 3px solid rgb(157, 167, 177);
+    }
+
+    #clear{
+        background-color: khaki;
+
+    }
+
+    #enter{
+        background-color: deepskyblue;color: white;
+
+    }
+
+    .buttons{
+        text-align: center;
+        background-color: rgb(157, 167, 177);
+
+    }
+
+
+</style>
+
 <body>
 
-    <div style="color: lightseagreen;font-size: larger;">Calculator</div>
-    <table border="3">
-        <tr>
+    <div id="heading">Calculator</div>
+    <table id="table">
+        <tr class="buttons">
             <td colspan="3"><input type="text"></td>
-            <td><input type="button" value="C" style="background-color: khaki;"></td>
+            <td><input type="button" value="C" id="clear"></td>
         </tr>
 
-        <tr style="text-align: center;background-color: rgb(157, 167, 177);">
+        <tr class="buttons">
             <td><input type="button" value="1"></td>
             <td><input type="button" value="2"></td>
             <td><input type="button" value="3"></td>
-            <td><input type="button" value="*"></td>
+            <td class="operators"><input type="button" value="*"></td>
         </tr>
 
-        <tr style="text-align: center;background-color: rgb(157, 167, 177);">
+        <tr class="buttons">
             <td><input type="button" value="4"></td>
             <td><input type="button" value="5"></td>
             <td><input type="button" value="6"></td>
-            <td><input type="button" value="/"></td>
+            <td class="operators"><input type="button" value="/"></td>
         </tr>
 
-        <tr style="text-align: center;background-color: rgb(157, 167, 177);">
+        <tr class="buttons">
             <td><input type="button" value="7"></td>
             <td><input type="button" value="8"></td>
             <td><input type="button" value="9"></td>
-            <td><input type="button" value="-"></td>
+            <td class="operators"><input type="button" value="-"></td>
         </tr>
 
-        <tr style="text-align: center;background-color: rgb(157, 167, 177);">
+        <tr class="buttons">
             <td><input type="button" value="."></td>
             <td><input type="button" value="0"></td>
-            <td><input type="button" value="=" 
-                style="background-color: deepskyblue;color: white;"></td>
-            <td><input type="button" value="+"></td>
+            <td><input type="button" value="=" id="enter"></td>
+            <td class="operators"><input type="button" value="+"></td>
         </tr>
     </table>
     
