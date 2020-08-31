@@ -1,0 +1,177 @@
+h1{
+  text-align: center;
+  font-size: 2em;
+  color: cadetblue;
+  padding-top: 20px;
+  
+}
+h2{
+  text-align: center;
+  
+}
+
+
+
+/* #home-button{
+
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 2em;
+  text-decoration: none;
+  
+  
+} */
+
+#home{
+  font-size: 1.5em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 20px;
+  
+}
+
+
+/* a:hover{
+  color: black;
+  background-color: gainsboro;
+  text-decoration: none;
+  
+} */
+
+#main-content{
+  padding-left: 20px;
+  padding-right:20px;
+  padding-top: 50px; 
+
+}
+
+.blocks{
+  width: 100%;
+  height: 300px;
+  /* background-color: rgb(149, 213, 233); */
+  position: relative;
+  border: 5px solid white;
+  background: black;
+  
+}
+
+/* .span{
+  
+  background-color: rgb(218, 217, 216);
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  font-size: 1.5em;
+  box-sizing: border-box;
+  opacity: 0.8;
+  width: fit-content;
+  padding: 5px 20px 5px 5px;
+  color: #fff;
+  } */
+
+  span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: rgb(223, 215, 215);
+    color: rgb(7, 6, 6);
+    opacity: .8;
+    overflow: hidden;
+    
+  }
+
+img{
+  height: 100%;
+  width: 100%;
+}
+
+
+/* .upcoming-events{
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100%-20px;
+  box-sizing: border-box;
+  height: 400px;
+  background-color: rgb(233, 232, 232); */
+ 
+  /* /* overflow: hidden; 
+  
+
+  margin: 5px 5px 5px 5px; 
+  
+
+  
+} */
+
+.pre-entry{
+  box-sizing: border-box;
+  float: left;
+  
+  margin: 15px 15px 15px 15px;
+}
+
+.new-homepage{
+  width: 100%;
+}
+
+@media (min-width: 1200px){
+  #home{
+    padding-right: 63%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+  #home{
+    padding-right: 63%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  
+  .blocks{
+    width: 100%;
+  }
+
+  #main-content{
+    width: 100%;
+  }
+}
+
+.upcoming-events{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* #elixir{
+  background: url(images/hackathon.jpg);
+
+} */
+/* .card-text,.card-title{
+  background-color: rgb(168, 165, 165);
+  opacity: 80%;
+  color: white;
+} */
+
+.register-for-event{
+  float: right;
+}
+
+.event-analysis-heading{
+  text-align: center;
+}
+
+.event-analysis-body{
+  text-align: center;
+}
+
+.event-analysis-container{
+  padding-bottom: 20px;
+  
+}
