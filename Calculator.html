@@ -6,12 +6,37 @@
     <title>Calculator</title>
 </head>
 
+<script> 
+
+    function clr() 
+    { 
+        document.getElementById("result").value = "" 
+    } 
+
+    function solve() 
+    { 
+        let x = document.getElementById("result").value 
+        let y = eval(x) 
+        document.getElementById("result").value = y 
+    } 
+    
+    function dis(val) 
+    { 
+        document.getElementById("result").value+=val 
+    } 
+
+      
+ </script>
+
 <style>
 
-    #heading{
+    /* #heading{
         color: lightseagreen;
-        font-size: larger;"
-    }
+        font-size: larger;
+        margin-right: auto;
+        margin-left: auto;
+        
+    } */
 
     .operators{
         background-color: rgb(185, 213, 218);
@@ -19,6 +44,7 @@
 
     #table{
         border: 3px solid rgb(157, 167, 177);
+
     }
 
     #clear{
@@ -36,45 +62,51 @@
         background-color: rgb(157, 167, 177);
 
     }
+    *{
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
 
 
 </style>
 
 <body>
 
-    <div id="heading">Calculator</div>
+    <!-- <div id="heading">Calculator</div> -->
     <table id="table">
         <tr class="buttons">
-            <td colspan="3"><input type="text"></td>
-            <td><input type="button" value="C" id="clear"></td>
+            <td colspan="3"><input type="text" id="result"></td>
+            <td><input type="button" value="C" onclick="clr()" id="clear"></td>
         </tr>
 
         <tr class="buttons">
-            <td><input type="button" value="1"></td>
-            <td><input type="button" value="2"></td>
-            <td><input type="button" value="3"></td>
-            <td class="operators"><input type="button" value="*"></td>
+            <td><input type="button" value="1" onclick="dis('1')"></td>
+            <td><input type="button" value="2" onclick="dis('2')"></td>
+            <td><input type="button" value="3" onclick="dis('3')"></td>
+            <td class="operators"><input type="button" value="*" onclick="dis('*')"></td>
         </tr>
 
         <tr class="buttons">
-            <td><input type="button" value="4"></td>
-            <td><input type="button" value="5"></td>
-            <td><input type="button" value="6"></td>
-            <td class="operators"><input type="button" value="/"></td>
+            <td><input type="button" value="4" onclick="dis('4')"></td>
+            <td><input type="button" value="5" onclick="dis('5')"></td>
+            <td><input type="button" value="6" onclick="dis('6')"></td>
+            <td class="operators"><input type="button" value="/" onclick="dis('/')"></td>
         </tr>
 
         <tr class="buttons">
-            <td><input type="button" value="7"></td>
-            <td><input type="button" value="8"></td>
-            <td><input type="button" value="9"></td>
-            <td class="operators"><input type="button" value="-"></td>
+            <td><input type="button" value="7" onclick="dis('7')"></td>
+            <td><input type="button" value="8" onclick="dis('8')"></td>
+            <td><input type="button" value="9" onclick="dis('9')"></td>
+            <td class="operators"><input type="button" value="-" onclick="dis('-')"></td>
         </tr>
 
         <tr class="buttons">
-            <td><input type="button" value="."></td>
-            <td><input type="button" value="0"></td>
-            <td><input type="button" value="=" id="enter"></td>
-            <td class="operators"><input type="button" value="+"></td>
+            <td><input type="button" value="." onclick="dis('.')"></td>
+            <td><input type="button" value="0" onclick="dis('0')"></td>
+            <td><input type="button" value="=" onclick="solve()" id="enter"></td>
+            <td class="operators"><input type="button" value="+" onclick="dis('+')"></td>
         </tr>
     </table>
     
